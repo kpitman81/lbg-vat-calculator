@@ -18,7 +18,7 @@ pipeline {
     stage('Test') {
         steps {
           // Run the ReactJS tests
-          sh "npm test"
+          sh "sudo npm test"
         }
     }
     stage('SonarQube Analysis') {
